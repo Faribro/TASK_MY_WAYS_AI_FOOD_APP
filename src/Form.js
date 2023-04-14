@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./index.css";
 
 function FoodForm() {
   const [foodName, setFoodName] = useState("");

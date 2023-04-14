@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import CreateFood from "./Form";
 import FoodList from "./List";
+import "./index.css";
+
 
 function App() {
   const [page, setPage] = useState("create");
