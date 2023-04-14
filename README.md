@@ -26,13 +26,6 @@ Make a navigation bar using which user can switch between both pages
 
 
 
-![Task_component_1](https://user-images.githubusercontent.com/49672595/232054662-a24462e5-0e4b-4ab8-837a-9dcabf237aaf.PNG)
-
-
-
-![Task_component_2](https://user-images.githubusercontent.com/49672595/232054420-7debdfa4-9261-4d14-af96-c36254ddf4e8.PNG)
-
-
 
 
 
@@ -41,8 +34,41 @@ Make a navigation bar using which user can switch between both pages
 
 You can use any CSS or UI Library you prefer.
 
+
+
+
+
 User Interface
 
 The user interface is up to you, but it should be easy to use and visually appealing. consider using cards to display data. Here are some sample UI’s:
 
 # TASK_MY_WAYS_AI_FOOD_APP
+
+
+
+
+
+
+
+
+
+
+
+![1](https://user-images.githubusercontent.com/49672595/232056923-9a342ec6-f692-4f49-863b-0418adb70b7c.PNG)
+
+
+
+
+
+![2](https://user-images.githubusercontent.com/49672595/232056951-8c25d81e-116f-44fd-b45f-54b4526df172.PNG)
+
+
+
+
+
+
+
+
+
+
+
