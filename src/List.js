@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 
-function FoodList() {
+function FoodList({ food }) {
   const [foodNameFilter, setFoodNameFilter] = useState("");
   const [foodTypeFilter, setFoodTypeFilter] = useState("");
   const [deliveryTimeFilter, setDeliveryTimeFilter] = useState("");
@@ -19,6 +19,22 @@ function FoodList() {
       : true;
     return foodNameMatch && foodTypeMatch && deliveryTimeMatch;
   });
+
+  function handleDeleteAll(id) {
+    const updatedFoodData = foodData.filter((food) => food.id !== id);
+    localStorage.setItem("foodData", JSON.stringify(updatedFoodData));
+    window.location.reload(); // Refresh the page to reflect the changes
+  }
+
+  let handleDelete = (id) => {
+    const foodIndex = foodData.findIndex((food) => food.id === id);
+    if (foodIndex !== -1) {
+      const updatedFoodData = [...foodData];
+      updatedFoodData.splice(foodIndex, 1);
+      localStorage.setItem("foodData", JSON.stringify(updatedFoodData));
+      window.location.reload(); // Refresh the page to reflect the changes
+    }
+  };
 
   return (
     <div className="food-list">
@@ -49,6 +65,7 @@ function FoodList() {
             value={deliveryTimeFilter}
             onChange={(e) => setDeliveryTimeFilter(e.target.value)}
           />
+          {/* <button onClick={() => handleDeleteAll(food.id)}>Delete All</button> */}
         </div>
       </div>
       {filteredFoodData.length > 0 ? (
@@ -59,6 +76,7 @@ function FoodList() {
               <h3>{food.foodName}</h3> <br />
               <p>Food Type: {food.foodType}</p> <br />
               <p>Max Delivery Time: {food.maxDeliveryTime} minutes</p>
+              <button onClick={() => handleDelete(food.id)}>Delete</button>
             </li>
           ))}
         </ul>
