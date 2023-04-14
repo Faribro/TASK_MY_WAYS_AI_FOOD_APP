@@ -6,6 +6,7 @@ Instructions:
 Make sure your camera is on during the challenge. Your submission will not be considered if the camera is not on.
 You must submit your solution as a link to a public github repository.
 Maximum time for this challenge is 1hr.
+
 Any type of cheating will result in disqualification.
 
 Problem Statement:
@@ -46,21 +47,16 @@ The user interface is up to you, but it should be easy to use and visually appea
 
 
 
+![Capture](https://user-images.githubusercontent.com/49672595/232104992-4a7a33fa-fcba-4bb9-9abb-026dc3174928.PNG)
+
+
+
+![Capture1](https://user-images.githubusercontent.com/49672595/232105011-1bfc1f4e-cea7-4ae3-a14e-d8764ddfe48f.PNG)
 
 
 
 
 
-
-
-
-![1](https://user-images.githubusercontent.com/49672595/232056923-9a342ec6-f692-4f49-863b-0418adb70b7c.PNG)
-
-
-
-
-
-![2](https://user-images.githubusercontent.com/49672595/232056951-8c25d81e-116f-44fd-b45f-54b4526df172.PNG)
 
 
 
