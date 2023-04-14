@@ -18,7 +18,7 @@ function FoodList() {
 
   return (
     <div className="food-list">
-      <h2>All Foods</h2>
+      <h2>All Foods are mentioned here</h2>
       <div className="filter-form">
         <div className="form-group">
           <label htmlFor="food-type-filter">Food Type:</label>
