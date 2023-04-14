@@ -67,8 +67,11 @@ code {
   background-color: #1a73e8;
 }
 
-.food-list {
-}
+/* .food-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
 
 .food-list h2 {
   font-size: 24px;
@@ -103,21 +106,24 @@ code {
   margin-right: 8px;
 }
 
+li.food-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .food-card {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
   display: grid;
-  grid-template-columns: repeat(
-    3,
-    1fr
-  ); /* creates 3 columns with equal width */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 10px;
   padding: 16px;
   background-color: #f1f1f1;
   border-radius: 7px;
   margin-bottom: 16px;
   border: 1px dotted goldenrod;
-  display: flex;
   align-items: center;
-  flex-direction: row-reverse;
   width: 15rem;
   padding: 32px;
   background-color: #fff;
