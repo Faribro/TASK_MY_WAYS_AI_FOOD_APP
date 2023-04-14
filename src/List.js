@@ -55,6 +55,7 @@ function FoodList() {
         <ul>
           {filteredFoodData.map((food) => (
             <li key={food.id} className="food-card">
+              <img src={food.image} alt={food.foodName} />
               <h3>{food.foodName}</h3>
               <p>Food Type: {food.foodType}</p>
               <p>Max Delivery Time: {food.maxDeliveryTime} minutes</p>

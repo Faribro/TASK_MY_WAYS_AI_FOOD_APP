@@ -5,6 +5,7 @@ function FoodForm() {
   const [foodName, setFoodName] = useState("");
   const [foodType, setFoodType] = useState("");
   const [maxDeliveryTime, setMaxDeliveryTime] = useState("");
+  const [photo, setPhoto] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,6 +15,7 @@ function FoodForm() {
       foodName,
       foodType,
       maxDeliveryTime: parseInt(maxDeliveryTime),
+      photoUrl: photo ? URL.createObjectURL(photo) : null,
     };
 
     // Get existing food data from local storage
@@ -29,6 +31,7 @@ function FoodForm() {
     setFoodName("");
     setFoodType("");
     setMaxDeliveryTime("");
+    setPhoto(null);
   };
 
   return (
@@ -68,6 +71,15 @@ function FoodForm() {
         value={maxDeliveryTime}
         onChange={(e) => setMaxDeliveryTime(e.target.value)}
         required
+      />
+      <br />
+
+      <label htmlFor="photo">Photo:</label>
+      <input
+        type="file"
+        id="photo"
+        accept="image/*"
+        onChange={(e) => setPhoto(e.target.files[0])}
       />
       <br />
 
