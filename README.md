@@ -51,7 +51,8 @@ The user interface is up to you, but it should be easy to use and visually appea
 
 
 
-![Capture1](https://user-images.githubusercontent.com/49672595/232105011-1bfc1f4e-cea7-4ae3-a14e-d8764ddfe48f.PNG)
+
+![cc2](https://user-images.githubusercontent.com/49672595/232117464-320d13d0-b0d4-4d66-8949-34704cf5beaf.PNG)
 
 
 
