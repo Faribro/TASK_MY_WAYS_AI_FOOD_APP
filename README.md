@@ -18,6 +18,27 @@ Create a form using ReactJS to post food with the following fields: Food Name (t
 The data posted should be stored in local storage.
 Additionally, display all the foods created in another page and allow users to filter by food type (dropdown) and delivery time (number input) it will show all the items with delivery time lesser than the input.
 Make a navigation bar using which user can switch between both pages
+
+
+
+
+
+
+
+
+![Task_component_1](https://user-images.githubusercontent.com/49672595/232054662-a24462e5-0e4b-4ab8-837a-9dcabf237aaf.PNG)
+
+
+
+![Task_component_2](https://user-images.githubusercontent.com/49672595/232054420-7debdfa4-9261-4d14-af96-c36254ddf4e8.PNG)
+
+
+
+
+
+
+
+
 You can use any CSS or UI Library you prefer.
 
 User Interface
