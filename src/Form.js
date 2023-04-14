@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 
-function FoodForm() {
+export default function FoodForm() {
   const [foodName, setFoodName] = useState("");
   const [foodType, setFoodType] = useState("Delicious Food");
   const [maxDeliveryTime, setMaxDeliveryTime] = useState("");
@@ -50,7 +50,9 @@ function FoodForm() {
           </select>
         </div>
         <div className="form-group">
-          <label htmlFor="max-delivery-time">Max Delivery Time (in minutes):</label>
+          <label htmlFor="max-delivery-time">
+            Max Delivery Time (in minutes):
+          </label>
           <input
             type="number"
             id="max-delivery-time"
@@ -64,10 +66,3 @@ function FoodForm() {
     </div>
   );
 }
-
-function FoodList() {
-  const [foodTypeFilter, setFoodTypeFilter] = useState("");
-  const [deliveryTimeFilter, setDeliveryTimeFilter] = useState("");
-
-  const foodData = JSON.parse(localStorage.getItem("foodData")) || [];
-  const filteredFoodData
