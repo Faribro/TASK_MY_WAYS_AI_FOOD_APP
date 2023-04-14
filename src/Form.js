@@ -38,6 +38,7 @@ function FoodForm() {
         type="text"
         id="foodName"
         value={foodName}
+        name="foodName"
         onChange={(e) => setFoodName(e.target.value)}
         required
       />

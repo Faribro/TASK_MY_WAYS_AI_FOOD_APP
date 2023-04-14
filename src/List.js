@@ -2,18 +2,22 @@ import React, { useState } from "react";
 import "./index.css";
 
 function FoodList() {
+  const [foodNameFilter, setFoodNameFilter] = useState("");
   const [foodTypeFilter, setFoodTypeFilter] = useState("");
   const [deliveryTimeFilter, setDeliveryTimeFilter] = useState("");
 
   const foodData = JSON.parse(localStorage.getItem("foodData")) || [];
   const filteredFoodData = foodData.filter((food) => {
+    const foodNameMatch = foodNameFilter
+      ? food.foodName === foodNameFilter
+      : true;
     const foodTypeMatch = foodTypeFilter
       ? food.foodType === foodTypeFilter
       : true;
     const deliveryTimeMatch = deliveryTimeFilter
       ? food.maxDeliveryTime <= deliveryTimeFilter
       : true;
-    return foodTypeMatch && deliveryTimeMatch;
+    return foodNameMatch && foodTypeMatch && deliveryTimeMatch;
   });
 
   return (
@@ -48,10 +52,10 @@ function FoodList() {
         </div>
       </div>
       {filteredFoodData.length > 0 ? (
-        <ul className="food-card">
+        <ul>
           {filteredFoodData.map((food) => (
-            <li key={food.id}>
-              <h3>{food.name}</h3>
+            <li key={food.id} className="food-card">
+              <h3>{food.foodName}</h3>
               <p>Food Type: {food.foodType}</p>
               <p>Max Delivery Time: {food.maxDeliveryTime} minutes</p>
             </li>
