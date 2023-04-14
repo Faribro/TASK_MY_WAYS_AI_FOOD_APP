@@ -48,7 +48,7 @@ function FoodList() {
         </div>
       </div>
       {filteredFoodData.length > 0 ? (
-        <ul>
+        <ul className="food-card">
           {filteredFoodData.map((food) => (
             <li key={food.id}>
               <h3>{food.name}</h3>
